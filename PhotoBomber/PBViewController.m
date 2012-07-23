@@ -13,6 +13,7 @@
 #import "AFPhotoEditorController.h"
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
+#import "PBFilePickerViewController.h"
 #import "SBJsonParser.h"
 
 @interface PBViewController ()
@@ -236,35 +237,35 @@
     [popoverController presentPopoverFromRect:[sender frame] inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
-- (IBAction)pickerModalAction: (id) sender {
-    
-    
-    /*
-     * Create the object
-     */
-    FPPickerController *fpController = [[FPPickerController alloc] init];
-    
-    /*
-     * Set the delegate
-     */
-    fpController.fpdelegate = self;
-    
-    /*
-     * Ask for specific data types. (Optional) Default is all files.
-     */
-    fpController.dataTypes = [NSArray arrayWithObjects:@"image/*", nil];
-    //fpController.dataTypes = [NSArray arrayWithObjects:@"image/*", @"video/quicktime", nil];
-    
-    /*
-     * Select and order the sources (Optional) Default is all sources
-     */
-    //fpController.sourceNames = [[NSArray alloc] initWithObjects: FPSourceImagesearch, nil];
-    
-    /*
-     * Display it.
-     */
-    [self presentModalViewController:fpController animated:YES];
-}
+//- (IBAction)pickerModalAction: (id) sender {
+//    
+//    
+//    /*
+//     * Create the object
+//     */
+//    FPPickerController *fpController = [[FPPickerController alloc] init];
+//    
+//    /*
+//     * Set the delegate
+//     */
+//    fpController.fpdelegate = self;
+//    
+//    /*
+//     * Ask for specific data types. (Optional) Default is all files.
+//     */
+//    fpController.dataTypes = [NSArray arrayWithObjects:@"image/*", nil];
+//    //fpController.dataTypes = [NSArray arrayWithObjects:@"image/*", @"video/quicktime", nil];
+//    
+//    /*
+//     * Select and order the sources (Optional) Default is all sources
+//     */
+//    //fpController.sourceNames = [[NSArray alloc] initWithObjects: FPSourceImagesearch, nil];
+//    
+//    /*
+//     * Display it.
+//     */
+//    [self presentModalViewController:fpController animated:YES];
+//}
 
 - (IBAction)savingAction: (id)sender {
     
@@ -634,5 +635,23 @@
     _marque.hidden = YES;
 }
 
+#pragma mark - FilePickerViewControllerDelegate
+
+- (void)filePickerViewControllerDidCancel:(PBFilePickerViewController *)controller {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)filePickerViewControllerDidSave:(PBFilePickerViewController *)controller {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.identifier isEqualToString:@"FilePicker"]) {
+		UINavigationController *navigationController = segue.destinationViewController;
+		PBFilePickerViewController *filePickerViewController = [[navigationController viewControllers] objectAtIndex:0];
+		filePickerViewController.delegate = self;
+	}
+}
 
 @end

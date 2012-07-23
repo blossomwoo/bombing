@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PhotoBomber/PBViewController.m"
-         timestampString = "364070836.611716"
+         timestampString = "364699819.042262"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "114"
-         endingLineNumber = "114"
+         startingLineNumber = "115"
+         endingLineNumber = "115"
          landmarkName = "-shouldAutorotateToInterfaceOrientation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PhotoBomber/PBViewController.m"
-         timestampString = "364071178.519742"
+         timestampString = "364699819.042262"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "156"
-         endingLineNumber = "156"
+         startingLineNumber = "157"
+         endingLineNumber = "157"
          landmarkName = "-setupOverlay:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,12 +34,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PhotoBomber/PBViewController.m"
-         timestampString = "364071248.98782"
+         timestampString = "364699819.042262"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "435"
-         endingLineNumber = "435"
+         startingLineNumber = "436"
+         endingLineNumber = "436"
          landmarkName = "-uploadFile:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PhotoBomber/PhotoBomber/PBFilePickerViewController.m"
+         timestampString = "364699838.236434"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "130"
+         endingLineNumber = "130"
+         landmarkName = "-cancel:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PhotoBomber/PBViewController.m"
+         timestampString = "364699854.659108"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "650"
+         endingLineNumber = "650"
+         landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

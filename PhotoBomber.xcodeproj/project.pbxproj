@@ -251,6 +251,7 @@
 		FC0CBC0A15B2775A009BDA73 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBBF215B2775A009BDA73 /* SBJsonUTF8Stream.m */; };
 		FC0CBC0B15B2775A009BDA73 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBBF415B2775A009BDA73 /* SBJsonWriter.m */; };
 		FC0CBC0C15B2775A009BDA73 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBBF415B2775A009BDA73 /* SBJsonWriter.m */; };
+		FC4839DE15BCDBAA0063EDD5 /* PBFilePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4839DD15BCDBAA0063EDD5 /* PBFilePickerViewController.m */; };
 		FC6EEA8F15B34FA30009D933 /* photobomb.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6EEA8E15B34FA30009D933 /* photobomb.png */; };
 /* End PBXBuildFile section */
 
@@ -566,6 +567,8 @@
 		FC0CBBF215B2775A009BDA73 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		FC0CBBF315B2775A009BDA73 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		FC0CBBF415B2775A009BDA73 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FC4839DC15BCDBAA0063EDD5 /* PBFilePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBFilePickerViewController.h; path = PhotoBomber/PBFilePickerViewController.h; sourceTree = "<group>"; };
+		FC4839DD15BCDBAA0063EDD5 /* PBFilePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFilePickerViewController.m; path = PhotoBomber/PBFilePickerViewController.m; sourceTree = "<group>"; };
 		FC6EEA8E15B34FA30009D933 /* photobomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photobomb.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -997,6 +1000,8 @@
 				FC0CBB7215B206AD009BDA73 /* MainStoryboard_iPad.storyboard */,
 				FC0CBB7515B206AD009BDA73 /* PBViewController.h */,
 				FC0CBB7615B206AD009BDA73 /* PBViewController.m */,
+				FC4839DC15BCDBAA0063EDD5 /* PBFilePickerViewController.h */,
+				FC4839DD15BCDBAA0063EDD5 /* PBFilePickerViewController.m */,
 				FC0CBB6415B206AD009BDA73 /* Supporting Files */,
 			);
 			path = PhotoBomber;
@@ -1406,6 +1411,7 @@
 				FC0CBC0715B2775A009BDA73 /* SBJsonTokeniser.m in Sources */,
 				FC0CBC0915B2775A009BDA73 /* SBJsonUTF8Stream.m in Sources */,
 				FC0CBC0B15B2775A009BDA73 /* SBJsonWriter.m in Sources */,
+				FC4839DE15BCDBAA0063EDD5 /* PBFilePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

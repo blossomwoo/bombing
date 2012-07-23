@@ -52,7 +52,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pickerModalAction:" destination="2" eventType="touchUpInside" id="R0b-Ei-47B"/>
+                                    <segue destination="azb-Ff-J8d" kind="modal" identifier="FilePicker" id="yOF-Nf-Rzy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OTd-QS-rNL">
@@ -154,8 +154,135 @@
             </objects>
             <point key="canvasLocation" x="61" y="124"/>
         </scene>
+        <!--File Picker View Controller - File Picker-->
+        <scene sceneID="eOd-ad-cov">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2p-FX-25m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="JHg-mc-dcb" customClass="PBFilePickerViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="G6c-Ef-Irl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Local" id="OqR-IM-i3v">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="K2S-S7-Cyd">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Camera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wjY-sc-0PG">
+                                                    <rect key="frame" x="62" y="11" width="61" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Dke-ZC-pYF">
+                                                    <rect key="frame" x="20" y="0.0" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Htf-La-qob">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="lGA-4U-qeq">
+                                                    <rect key="frame" x="20" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Camera Roll" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sFp-nv-2Ab">
+                                                    <rect key="frame" x="63" y="11" width="95" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Cloud" id="jeW-bC-H6o">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vAD-bU-vzt">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X7g-fD-D74">
+                                                    <rect key="frame" x="62" y="11" width="76" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="t7V-hk-L5h">
+                                                    <rect key="frame" x="20" y="0.0" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="JHg-mc-dcb" id="lmb-fj-fZk"/>
+                            <outlet property="delegate" destination="JHg-mc-dcb" id="6qs-YJ-ELA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="File Picker" id="rG7-Lz-3fj">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="zYP-Lr-yfs">
+                            <connections>
+                                <action selector="cancel:" destination="JHg-mc-dcb" id="JPh-Hj-mgP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Q8U-G9-dwQ">
+                            <connections>
+                                <action selector="done:" destination="JHg-mc-dcb" id="x7Y-XL-8o7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1017" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mCF-6F-FUE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHi-Xa-Qxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="azb-Ff-J8d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="FTh-b3-xwf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JHg-mc-dcb" kind="relationship" relationship="rootViewController" id="LzH-Hn-e4K"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="491" y="133"/>
+        </scene>
     </scenes>
     <classes>
+        <class className="PBFilePickerViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PBFilePickerViewController.h"/>
+        </class>
         <class className="PBViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PBViewController.h"/>
             <relationships>

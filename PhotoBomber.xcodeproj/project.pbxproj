@@ -251,8 +251,13 @@
 		FC0CBC0A15B2775A009BDA73 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBBF215B2775A009BDA73 /* SBJsonUTF8Stream.m */; };
 		FC0CBC0B15B2775A009BDA73 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBBF415B2775A009BDA73 /* SBJsonWriter.m */; };
 		FC0CBC0C15B2775A009BDA73 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0CBBF415B2775A009BDA73 /* SBJsonWriter.m */; };
+		FC440A9B15CD12DF00D82A3F /* PBBackgroundPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC440A9A15CD12DF00D82A3F /* PBBackgroundPickerViewController.m */; };
 		FC4839DE15BCDBAA0063EDD5 /* PBFilePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4839DD15BCDBAA0063EDD5 /* PBFilePickerViewController.m */; };
 		FC6EEA8F15B34FA30009D933 /* photobomb.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6EEA8E15B34FA30009D933 /* photobomb.png */; };
+		FCDB8F2815CF644200EAF9F1 /* PBPhotobomberPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB8F2715CF644200EAF9F1 /* PBPhotobomberPickerViewController.m */; };
+		FCDB8F2B15CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB8F2A15CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.m */; };
+		FCDB8F2E15CF8F5700EAF9F1 /* PBRetouchImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB8F2D15CF8F5700EAF9F1 /* PBRetouchImageViewController.m */; };
+		FCDB8F3115CF9DE300EAF9F1 /* PBShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDB8F3015CF9DE300EAF9F1 /* PBShareViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -567,9 +572,19 @@
 		FC0CBBF215B2775A009BDA73 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		FC0CBBF315B2775A009BDA73 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		FC0CBBF415B2775A009BDA73 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FC440A9915CD12DF00D82A3F /* PBBackgroundPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBBackgroundPickerViewController.h; path = PhotoBomber/PBBackgroundPickerViewController.h; sourceTree = "<group>"; };
+		FC440A9A15CD12DF00D82A3F /* PBBackgroundPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBBackgroundPickerViewController.m; path = PhotoBomber/PBBackgroundPickerViewController.m; sourceTree = "<group>"; };
 		FC4839DC15BCDBAA0063EDD5 /* PBFilePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBFilePickerViewController.h; path = PhotoBomber/PBFilePickerViewController.h; sourceTree = "<group>"; };
 		FC4839DD15BCDBAA0063EDD5 /* PBFilePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBFilePickerViewController.m; path = PhotoBomber/PBFilePickerViewController.m; sourceTree = "<group>"; };
 		FC6EEA8E15B34FA30009D933 /* photobomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photobomb.png; sourceTree = "<group>"; };
+		FCDB8F2615CF644200EAF9F1 /* PBPhotobomberPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBPhotobomberPickerViewController.h; path = PhotoBomber/PBPhotobomberPickerViewController.h; sourceTree = "<group>"; };
+		FCDB8F2715CF644200EAF9F1 /* PBPhotobomberPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBPhotobomberPickerViewController.m; path = PhotoBomber/PBPhotobomberPickerViewController.m; sourceTree = "<group>"; };
+		FCDB8F2915CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBRemoveBackgroundViewController.h; path = PhotoBomber/PBRemoveBackgroundViewController.h; sourceTree = "<group>"; };
+		FCDB8F2A15CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBRemoveBackgroundViewController.m; path = PhotoBomber/PBRemoveBackgroundViewController.m; sourceTree = "<group>"; };
+		FCDB8F2C15CF8F5700EAF9F1 /* PBRetouchImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBRetouchImageViewController.h; path = PhotoBomber/PBRetouchImageViewController.h; sourceTree = "<group>"; };
+		FCDB8F2D15CF8F5700EAF9F1 /* PBRetouchImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBRetouchImageViewController.m; path = PhotoBomber/PBRetouchImageViewController.m; sourceTree = "<group>"; };
+		FCDB8F2F15CF9DE300EAF9F1 /* PBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBShareViewController.h; path = PhotoBomber/PBShareViewController.h; sourceTree = "<group>"; };
+		FCDB8F3015CF9DE300EAF9F1 /* PBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBShareViewController.m; path = PhotoBomber/PBShareViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -992,6 +1007,7 @@
 		FC0CBB6315B206AD009BDA73 /* PhotoBomber */ = {
 			isa = PBXGroup;
 			children = (
+				FC440A9815CD12B000D82A3F /* Classes */,
 				FC6EEA8D15B34F980009D933 /* Images */,
 				FC0CBBDB15B2775A009BDA73 /* SBJson Classes */,
 				FC0CBB6C15B206AD009BDA73 /* PBAppDelegate.h */,
@@ -1070,6 +1086,23 @@
 			);
 			name = "SBJson Classes";
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		FC440A9815CD12B000D82A3F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC440A9915CD12DF00D82A3F /* PBBackgroundPickerViewController.h */,
+				FC440A9A15CD12DF00D82A3F /* PBBackgroundPickerViewController.m */,
+				FCDB8F2615CF644200EAF9F1 /* PBPhotobomberPickerViewController.h */,
+				FCDB8F2715CF644200EAF9F1 /* PBPhotobomberPickerViewController.m */,
+				FCDB8F2915CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.h */,
+				FCDB8F2A15CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.m */,
+				FCDB8F2C15CF8F5700EAF9F1 /* PBRetouchImageViewController.h */,
+				FCDB8F2D15CF8F5700EAF9F1 /* PBRetouchImageViewController.m */,
+				FCDB8F2F15CF9DE300EAF9F1 /* PBShareViewController.h */,
+				FCDB8F3015CF9DE300EAF9F1 /* PBShareViewController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		FC6EEA8D15B34F980009D933 /* Images */ = {
@@ -1412,6 +1445,11 @@
 				FC0CBC0915B2775A009BDA73 /* SBJsonUTF8Stream.m in Sources */,
 				FC0CBC0B15B2775A009BDA73 /* SBJsonWriter.m in Sources */,
 				FC4839DE15BCDBAA0063EDD5 /* PBFilePickerViewController.m in Sources */,
+				FC440A9B15CD12DF00D82A3F /* PBBackgroundPickerViewController.m in Sources */,
+				FCDB8F2815CF644200EAF9F1 /* PBPhotobomberPickerViewController.m in Sources */,
+				FCDB8F2B15CF6B0D00EAF9F1 /* PBRemoveBackgroundViewController.m in Sources */,
+				FCDB8F2E15CF8F5700EAF9F1 /* PBRetouchImageViewController.m in Sources */,
+				FCDB8F3115CF9DE300EAF9F1 /* PBShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

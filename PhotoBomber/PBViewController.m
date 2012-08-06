@@ -167,7 +167,7 @@
         [pic2 addTarget:overlayBlendFilter];
         [pic2 processImage];
         
-        UIImage *blendedImage = [overlayBlendFilter imageFromCurrentlyProcessedOutputWithOrientation:originalImage.imageOrientation];
+//        UIImage *blendedImage = [overlayBlendFilter imageFromCurrentlyProcessedOutputWithOrientation:originalImage.imageOrientation];
         
         //Blend Image Method 1 
         //[self displayEditorForImage:blendedImage];
@@ -409,10 +409,9 @@
 }    
 
 #pragma mark - Aviary Methods
-- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
-{
+- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)newImage {
    // [[self imageView] setImage:image];
-    self.image.image = image;
+    self.image.image = newImage;
     [self dismissModalViewControllerAnimated:YES];
     [self configureStep3];
 }

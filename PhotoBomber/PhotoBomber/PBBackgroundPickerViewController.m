@@ -10,7 +10,7 @@
 #import "PBPhotobomberPickerViewController.h"
 
 @interface PBBackgroundPickerViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (nonatomic) UIImageView *backgroundImageView;
 
 @end
 
@@ -31,6 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.backgroundImageView.hidden = YES;
 }
 
 - (void)viewDidUnload {

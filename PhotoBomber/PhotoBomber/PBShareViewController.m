@@ -104,7 +104,7 @@
 }
 
 - (IBAction)restartButtonPressed:(id)sender {
-    // TODO
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - FPSaveControllerDelegate Methods

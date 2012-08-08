@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zk1-wz-iBi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zk1-wz-iBi">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -431,7 +431,7 @@
                                     <outletCollection property="gestureRecognizers" destination="4dJ-bU-SCT" appends="YES" id="j2y-rp-aLt"/>
                                 </connections>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="5Yp-ag-a6w">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="5Yp-ag-a6w">
                                 <rect key="frame" x="40" y="144" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -570,6 +570,9 @@
     <classes>
         <class className="PBBackgroundPickerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PBBackgroundPickerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pickerModalAction:"/>
+            </relationships>
         </class>
         <class className="PBFilePickerViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PBFilePickerViewController.h"/>
@@ -577,6 +580,7 @@
         <class className="PBPhotobomberPickerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PBPhotobomberPickerViewController.h"/>
             <relationships>
+                <relationship kind="action" name="pickerModalAction:"/>
                 <relationship kind="outlet" name="photobomberImageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
@@ -589,6 +593,11 @@
         <class className="PBRetouchImageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PBRetouchImageViewController.h"/>
             <relationships>
+                <relationship kind="action" name="move:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="nextButtonPressed:"/>
+                <relationship kind="action" name="rotate:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="scale:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="tapped:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="croppedPhotobomberImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="imageContainerView" candidateClass="UIView"/>
